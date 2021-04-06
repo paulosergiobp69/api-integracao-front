@@ -1,11 +1,15 @@
+<<<<<<< HEAD
    
 
+=======
+>>>>>>> 1f88de800403215ca2a68c8e0dce74e50f203c94
 
 <template>
   <div id="app">
 
     <nav>
       <div class="nav-wrapper blue darken-1">
+<<<<<<< HEAD
         <a href="#" class="brand-logo center">Ordem de Compra -  id:{{produto.H100_Id}}</a>
  
       </div>
@@ -34,6 +38,22 @@
           <input type="text" placeholder="Usuario" v-model="produto.H100_C007_Id">
           <label>Status</label>
           <input type="text" placeholder="Status" v-model="produto.H100_Status">
+=======
+        <a href="#" class="brand-logo center">Ordens de Compra testaqaae</a>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <form>
+
+          <label>Nome</label>
+          <input type="text" placeholder="Nome">
+          <label>Quantidade</label>
+          <input type="number" placeholder="QTD">
+          <label>Valor</label>
+          <input type="text" placeholder="Valor">
+>>>>>>> 1f88de800403215ca2a68c8e0dce74e50f203c94
 
           <button class="waves-effect waves-light btn-small">Salvar<i class="material-icons left">save</i></button>
 
@@ -45,11 +65,16 @@
 
           <tr>
             <th>PRODUTO</th>
+<<<<<<< HEAD
             <th>ITEM OC</th>
             <th>QTD</th>
             <th>VALOR</th>
             <th>USUARIO</th>
             <th>STATUS</th>
+=======
+            <th>QTD</th>
+            <th>VALOR</th>
+>>>>>>> 1f88de800403215ca2a68c8e0dce74e50f203c94
             <th>OPÇÕES</th>
           </tr>
 
@@ -57,6 +82,7 @@
 
         <tbody>
 
+<<<<<<< HEAD
           <tr v-for="produto of produtos.data" :key="produto.H100_Id">
 
             <td>{{produto.H100_D009_Id}}</td>
@@ -77,6 +103,20 @@
                 <li v-for="error in errors" :key="error.message">{{ error }}</li>
               </ul>
           </p>          
+=======
+          <tr v-for="oc of cabecalhos" :key="oc.H100_Id">
+
+            <td>{{ oc.H100_D009_Id }}</td>
+            <td>{{ oc.H100_Quantidade }}</td>
+            <td>{{ oc.H100_Valor_Unitario }}</td>
+            <td>
+              <button class="waves-effect btn-small blue darken-1"><i class="material-icons">create</i>{{ oc.H100_Quantidade}}</button>
+              <button class="waves-effect btn-small red darken-1"><i class="material-icons">delete_sweep</i></button>
+            </td>
+
+          </tr>
+
+>>>>>>> 1f88de800403215ca2a68c8e0dce74e50f203c94
         </tbody>
       
       </table>
@@ -84,6 +124,7 @@
     </div>
 
   </div>
+<<<<<<< HEAD
 
   <div class="modal fade bd-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -201,6 +242,7 @@ export default {
 
 
 }
+
 </script>
 
 <style>
